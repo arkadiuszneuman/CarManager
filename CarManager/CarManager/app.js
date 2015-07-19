@@ -13,6 +13,7 @@ var app = express();
 //// view engine setup
 //app.set('views', path.join(__dirname, '/CarManager/www/'));
 app.use(express.static(__dirname + '/www/'));
+app.use('/components', express.static(__dirname + '/bower_components'));
 //app.set('view engine', 'jade');
 
 //// uncomment after placing your favicon in /public

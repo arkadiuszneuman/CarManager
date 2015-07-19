@@ -31,11 +31,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="bower_components\angular\angular.js" />
+    <Compile Include="bower_components\angular\angular.min.js" />
+    <Compile Include="bower_components\angular\index.js" />
+    <Compile Include="bower_components\material-design-lite\material.js" />
+    <Compile Include="bower_components\material-design-lite\material.min.js" />
     <Compile Include="plugins\cordova-plugin-whitelist\whitelist.js" />
     <Compile Include="www\js\index.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
+    <Content Include="bower_components\angular\.bower.json" />
+    <Content Include="bower_components\angular\angular-csp.css" />
+    <Content Include="bower_components\angular\angular.min.js.gzip" />
+    <Content Include="bower_components\angular\angular.min.js.map" />
+    <Content Include="bower_components\angular\bower.json" />
+    <Content Include="bower_components\angular\package.json" />
+    <Content Include="bower_components\angular\README.md" />
+    <Content Include="bower_components\material-design-lite\.bower.json" />
+    <Content Include="bower_components\material-design-lite\bower.json" />
+    <Content Include="bower_components\material-design-lite\LICENSE" />
+    <Content Include="bower_components\material-design-lite\material.css" />
+    <Content Include="bower_components\material-design-lite\material.min.css" />
+    <Content Include="bower_components\material-design-lite\material.min.css.map" />
+    <Content Include="bower_components\material-design-lite\material.min.js.map" />
+    <Content Include="bower_components\material-design-lite\package.json" />
     <Content Include="config.xml" />
     <Content Include="hooks\README.md" />
     <Content Include="platforms\platforms.json" />
@@ -64,7 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
-    <Folder Include="CarManager\" />
+    <Folder Include="bower_components\" />
+    <Folder Include="bower_components\angular\" />
+    <Folder Include="bower_components\material-design-lite\" />
     <Folder Include="hooks\" />
     <Folder Include="platforms\" />
     <Folder Include="plugins\" />
