@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>068dc73c-d004-4271-90f4-07cf92aa07b7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>bin\www</StartupFile>
+    <StartupFile>bin\www.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -40,7 +40,7 @@
     <Compile Include="www\js\index.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
-    <Compile Include="bin\www" />
+    <Compile Include="bin\www.js" />
     <Content Include="bower_components\angular\.bower.json" />
     <Content Include="bower_components\angular\angular-csp.css" />
     <Content Include="bower_components\angular\angular.min.js.gzip" />
@@ -72,6 +72,8 @@
     <Content Include="plugins\cordova-plugin-whitelist\src\ios\CDVNavigationWhitelistPlugin.m" />
     <Content Include="plugins\fetch.json" />
     <Content Include="plugins\windows.json" />
+    <Content Include="www\css\materialicons\materialicons.css" />
+    <Content Include="www\css\materialicons\materialicons.woff2" />
     <Content Include="www\css\index.css" />
     <Content Include="www\img\logo.png" />
     <Content Include="www\index.html" />
@@ -94,6 +96,7 @@
     <Folder Include="plugins\cordova-plugin-whitelist\src\" />
     <Folder Include="plugins\cordova-plugin-whitelist\src\android\" />
     <Folder Include="plugins\cordova-plugin-whitelist\src\ios\" />
+    <Folder Include="www\css\materialicons\" />
     <Folder Include="www\" />
     <Folder Include="www\css\" />
     <Folder Include="www\img\" />
