@@ -37,6 +37,7 @@ html, body {
 }
 .mdl-demo .mdl-layout__tab-bar-container {
   height: 64px;
+  overflow: visible;
 }
 .mdl-demo .mdl-layout__tab-bar {
   padding: 0;
