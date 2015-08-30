@@ -51,7 +51,6 @@
         .plus-button-in-anim {
             -webkit-animation-name: plus-button-in-anim;
             -webkit-animation-duration: .17s;
-            /*-webkit-animation-fill-mode: forwards;*/
             -webkit-animation-timing-function: linear;
         }
 
@@ -59,6 +58,7 @@
             -webkit-animation-name: plus-button-out-anim;
             -webkit-animation-duration: .17s;
             -webkit-animation-timing-function: linear;
+            -webkit-animation-direction: alternate;
         }
 
         @-webkit-keyframes plus-button-in-anim {
@@ -78,6 +78,42 @@
 
             to {
                 -webkit-transform: rotate(-180deg);
+            }
+        }
+
+        .button-invisible-anim {
+            -webkit-animation-name: button-invisible-anim;
+            -webkit-animation-duration: .17s;
+            -webkit-animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes button-invisible-anim {
+            0% {
+                opacity: 1;
+            }
+            99% {
+                opacity: 0;
+            }
+            100% {
+                visibility:hidden;
+            }
+        }
+
+        .button-visible-anim {
+            -webkit-animation-name: button-visible-anim;
+            -webkit-animation-duration: .17s;
+            -webkit-animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes button-visible-anim {
+            0% {
+                opacity: 0;
+            }
+            1% {
+                visibility:visible;
+            }
+            100% {
+                opacity: 1;
             }
         }
     </style>
@@ -102,12 +138,12 @@
                 <a href="#features" class="mdl-layout__tab">FAQ</a>
 
             </div>-->
-            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--teal testButtonAnim" id="add"
-                    ng-class="{'plus-button-in-anim':hovering, 'plus-button-out-anim':(!hovering && firstMouseEnter==true)}"
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--teal" id="add"
+                    ng-class="{'plus-button-in-anim':hovering, 'plus-button-out-anim':!hovering && firstMouseEnter}"
                     ng-mouseenter="hovering=true; firstMouseEnter=true"
                     ng-mouseleave="hovering=false">
-                <i class="material-icons" role="presentation">add</i>
-                <!--<span class="visuallyhidden">Add</span>-->
+                <i class="material-icons" role="presentation" ng-class="{'button-invisible-anim':hovering}">add</i>
+                <i class="material-icons" role="presentation" ng-class="{'button-visible-anim':hovering}" ng-if="hovering">local_gas_station</i>
             </button>
 
             <div class="floating-item-container">
